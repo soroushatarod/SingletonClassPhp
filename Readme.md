@@ -1,12 +1,19 @@
-<h1>Doodle Paint5 for Pokki</h1>
-Doodle Paint5 is a simple HTML5 painting program that uses the Canvas element and mootools JavaScript library.
-It runs on the Pokki appstore (http://pokki.com)
- 
+<h1>A resuable Singleton Class in PHP</h1>
+A base Singleton class that can be used in a generic way.
+All you have to do is just extend it and your class will turn into Singleton
 <h2>Important source files</h2>
-app.js - Main js entrypoint for Doodle Paint<br />
-popup.js - Pokki popup wrapper<br />
-window.html - HTML entrypoint for Doodle Paint<br />
-default.css - All Doodle Paint CSS<br />
+singleton.php - The Singleton Class <br />
+testClass.php - A sample class writen that extends Singleton Class <br />
+index.php - Demonstration how to use the Singleton Class<br />
 <br />
-ToolBase.js - Abstract base class for painting Tools<br />
-*****Tool.js - Painting tool implementations, pencil, brush, circle, spray, etc.<br />
+<h2>Usage</h2>
+<p>To use this class, you just have to extend it
+<pre>
+class db extends Singleton{
+		//anything here
+}
+</pre>
+<p>To create object you would do like so:</p>
+<pre> $newDb = db::getInstance(); </pre>
+
+
